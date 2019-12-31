@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Submit buttons with pure UTF8 loader animation</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="../src/SubmitButtonPureUTFLoader.js"></script>
+  <script src="index.js"></script>
+</head>
+<body>
+  <form>
+    <div class="row">
+      <div class="column">
+        <p>
+          Without shadow root:
+        </p>
+        <p>
+          <submit-button-pure-utf-loader loader-style="3circles">
+            &nbsp;3&nbsp;circles&nbsp;
+          </submit-button-pure-utf-loader>
+        </p>
+        <p>
+          <submit-button-pure-utf-loader loader-style="3squares">
+            &nbsp;3&nbsp;squares&nbsp;
+          </submit-button-pure-utf-loader>
+        </p>
+        <p>
+          <submit-button-pure-utf-loader loader-style="l2r-rectangle">
+            &nbsp;Rectangle&nbsp;left&nbsp;to&nbsp;right&nbsp;
+          </submit-button-pure-utf-loader>
+        </p>
+        <p>
+          <submit-button-pure-utf-loader loader-style="diamonds">
+            &nbsp;Diamonds&nbsp;
+          </submit-button-pure-utf-loader>
+        </p>
+      </div>
+      <div class="column">
+        <p>
+          With shadow root:
+        </p>
+        <p>
+          <submit-button-pure-utf-loader loader-style="3circles" use-shadow-root="1">
+            &nbsp;3&nbsp;circles&nbsp;
+          </submit-button-pure-utf-loader>
+        </p>
+        <p>
+          <submit-button-pure-utf-loader loader-style="3squares" use-shadow-root="true">
+            &nbsp;3&nbsp;squares&nbsp;
+          </submit-button-pure-utf-loader>
+        </p>
+        <p>
+          <submit-button-pure-utf-loader loader-style="l2r-rectangle" use-shadow-root="use-shadow-root">
+            &nbsp;Rectangle&nbsp;left&nbsp;to&nbsp;right&nbsp;
+          </submit-button-pure-utf-loader>
+        </p>
+        <p>
+          <submit-button-pure-utf-loader loader-style="diamonds" use-shadow-root="use-shadow-root">
+            &nbsp;Diamonds&nbsp;
+          </submit-button-pure-utf-loader>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column100">
+        <button id="push" type="submit">PUSH THIS BUTTON TO START</button>
+        <p>
+          Please note that a click on a shadow root button doesn't fire the form submit event.
+        </p>
+      </div>
+    </div>
+  </form>
+</body>
+</html>
